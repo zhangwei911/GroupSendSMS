@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">V信</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="send">发              送</string>
+    <string name="selectsms">为每个选中的号码选择短信</string>
+    <string name="loading">加载数据中。。。</string>
+    <string name="groupsend_enter_title">确  定  发  送？</string>
+    <string name="groupsend_enter_desc">你确定发送所有已选短信吗？</string>
+    <string name="groupsend_enter_send">发    送</string>
+    <string name="cancel">取  消</string>
+    <string name="menu">菜单</string>
+    <string name="hassend">已发送</string>
+    <string name="failedsend">发送失败</string>
+    <string name="sms_speak_string_format">Message from "%1$s": %2$s</string>
+    <string name="reply">Reply</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="exit">退出</string>
+    <string name="sending1">发送中</string>
+    <string name="sending2">发送中。</string>
+    <string name="sending3">发送中。。</string>
+    <string name="sending4">发送中。。。</string>
+    <string name="add">添加</string>
+    <string name="edit">编辑</string>
+    <string name="addmessage_hint">请在此处输入</string>
+    <string name="delete">删除</string>
+    <string name="exchange">替换</string>
+    <string name="send_successed">成功发送！</string>
+    <string name="desc">声明</string>
+    <string name="desc1">本软件将使用您的手机号发送短信，非免费短信，请知悉！\n作者：Viz</string>
+    <string name="dontshowagain">不再显示</string>
+    <string name="ok">确定</string>
+
+    <array name="sms">
+        <item>快点看过来：有一颗心在追随着你，有一双眼在凝望着你，有一份真情在陪伴着你，有一份守候在等待着你，还有一个朋友在远方祝福着你：生日快乐！</item>
+        <item>冒泡泡Ｏｏ。°ｏＯｏ。Ｏｏ。°〇ｏ〇咕嘟。。。Ｏ。。Ｏ。ｏ〇。〇Ｏ冒泡泡Ｏｏ。°ｏＯｏ。Ｏｏ。°〇ｏ〇咕嘟。。。Ｏ。。Ｏ。ｏ〇。〇Ｏ有些事并不因时光流逝而褪色，有些人并不因不常见面而忘记，你是我永远的朋友，今日特来冒泡，朋友你还好吗？</item>
+        <item>天亮时，希望你每一天都过得快乐；天黑时，希望你每一晚都睡得香甜；天冷时，希望我的祝福能让你温暖！天冷了，多注意身体，风起了，多加件衣服，朋友的心意，不在话语多少，只要你能感受到温暖就好！愿你四季平安，一生幸福！</item>
+        <item>送你一座心中的花园，园里栽着智慧树，流着忘忧泉，开着自在花，搭着逍遥桥，在你疲惫与寂寞的时候推开门去看看，享受清风明月行云流水，祝愿天天快乐，事事顺心！</item>
+        <item>岁月渐淡，是缺少乐趣；感情渐淡，是缺乏联系。时光漫漫，我们总能不小心走散了，我愿把短信当做粘剂，把问候当做调剂，把祝福当做催化剂，把失散的缘分重新粘合，让失色的生活重焕生机，愿我们生活更好，友谊更铁，更加幸福快乐随！</item>
+        <item>不论天气冷不冷，不论雪花飘不飘，不论北风吹不吹，不论夜幕多寂寥，一份关怀涉山水，不畏艰险路迢迢，悄悄送你手机上，眼一瞟，嘴一笑，什么烦恼都忘掉，没事常问候，牵挂不打烊！有事没事记得常联系哦！</item>
+        <item>天气渐冷，思念渐浓，我们的友情，像雪花一样的纯净。我们不是恋人，却青梅竹马。我们不再年青，却两小无猜。我们曾经相濡以沫，我们永远不会相忘江湖。无论在天涯海角，无论是春夏秋冬，我们的友情，永远像雪花一样的纯净。祝你天天快乐！</item>
+    </array>
+</resources>

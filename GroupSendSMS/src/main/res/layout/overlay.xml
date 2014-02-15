@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="40sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#f79751"
+    android:background="#c7d0f7"
+    android:gravity="center"
+    android:id="@+id/overlay"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:alpha="0.8" />

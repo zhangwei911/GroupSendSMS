@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c_listView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/selectSMS_button"
+        android:divider="@drawable/listviewdivider"
+        android:dividerHeight="1dip"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        android:fadingEdge="none" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectsms"
+        android:id="@+id/selectSMS_button"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonstyle"
+        android:enabled="false"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+</RelativeLayout>

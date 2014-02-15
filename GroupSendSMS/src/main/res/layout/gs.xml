@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/send_button">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                android:id="@+id/add_contacts_button"
+                android:background="@drawable/buttonstyle"
+                android:visibility="gone" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contacts_listView"
+                android:layout_weight="1"
+                android:divider="@drawable/listviewdivider"
+                android:dividerHeight="1dip"
+                android:layout_below="@+id/add_contacts_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/addmessage"
+                android:id="@+id/addmessage_include" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sms_listView"
+                android:layout_weight="3"
+                android:divider="@drawable/listviewdivider"
+                android:dividerHeight="1dip"
+                android:layout_below="@+id/addmessage_include" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:id="@+id/send_button"
+        android:layout_alignParentBottom="true"
+        android:textSize="30dp"
+        android:background="@drawable/buttonstyle"
+        android:enabled="false" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/groupsend_enter"
+        android:layout_centerInParent="true"
+        android:id="@+id/send_enter" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/sending"
+        android:layout_centerInParent="true"
+        android:id="@+id/sending" />
+
+</RelativeLayout>

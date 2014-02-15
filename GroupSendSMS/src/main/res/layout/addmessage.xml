@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d8c9f7">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/addmessage_editText"
+        android:minLines="4"
+        android:background="@drawable/shape"
+        android:textColor="#000000"
+        android:textAlignment="gravity"
+        android:gravity="left|top"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:textCursorDrawable="@null"
+        android:hint="@string/addmessage_hint"
+        android:textColorHint="#f7702b" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addmessage_editText">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/add"
+            android:id="@+id/addmessage_button"
+            android:layout_below="@+id/addmessage_editText"
+            android:layout_weight="2"
+            android:background="@drawable/buttonstyle"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/cancel"
+            android:id="@+id/cancelmessage_button"
+            android:layout_alignTop="@+id/addmessage_button"
+            android:layout_toRightOf="@+id/addmessage_button"
+            android:layout_weight="3"
+            android:background="@drawable/buttonstyle_red"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>
