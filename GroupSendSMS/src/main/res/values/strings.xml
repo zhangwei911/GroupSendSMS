@@ -32,6 +32,7 @@
     <string name="desc1">本软件将使用您的手机号发送短信，非免费短信，请知悉！\n作者：Viz</string>
     <string name="dontshowagain">不再显示</string>
     <string name="ok">确定</string>
+    <string name="wrongNo">无效号码 请重新选择</string>
 
     <array name="sms">
         <item>快点看过来：有一颗心在追随着你，有一双眼在凝望着你，有一份真情在陪伴着你，有一份守候在等待着你，还有一个朋友在远方祝福着你：生日快乐！</item>

@@ -40,8 +40,13 @@ public class GroupSendSMSService {
      * @param SMS     短信内容
      */
     public static void send(String phoneNo, String SMS) {
-        smsManager.sendTextMessage(phoneNo, null, SMS, sentPI,
-                deliverPI);
+        try {
+            smsManager.sendTextMessage(phoneNo, null, SMS, sentPI,
+                    deliverPI);
+        }catch (Exception e){
+            Toast.makeText(mContext,mContext.getString(R.string.wrongNo),Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -89,7 +94,7 @@ public class GroupSendSMSService {
         }
     }
 
-    Context mContext;
+    static Context mContext;
     static PendingIntent sentPI, deliverPI;
     static SmsManager smsManager;
     /* 自定义ACTION常数，作为广播的Intent Filter识别常数 */

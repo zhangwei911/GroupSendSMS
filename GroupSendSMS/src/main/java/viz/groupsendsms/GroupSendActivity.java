@@ -216,8 +216,15 @@ public class GroupSendActivity extends Activity {
                 send_enter.setVisibility(View.GONE);
                 sending.setVisibility(View.VISIBLE);
 
+                //Log.i("test",selectedContacts.length+"");
+                //Log.i("test",selectedPhoneNo.length+"");
+                //Log.i("test",smsSelect.length+"");
+                //Log.i("test",smsAdpter.smsContent.length+"");
                 for (int i = 0; i < selectedContacts.length; i++) {
                     groupSendSMSService = new GroupSendSMSService(context);
+                    //Log.i("test",selectedPhoneNo[i]);
+                    //Log.i("test",smsSelect[i]+"");
+                    //Log.i("test",smsAdpter.smsContent[smsSelect[i]]);
                     groupSendSMSService.send(selectedPhoneNo[i], smsAdpter.smsContent[smsSelect[i]]);
                     GroupSendSMSService.writeSMSIntoSystemDB(context, selectedPhoneNo[i], smsAdpter.smsContent[smsSelect[i]]);
                 }
@@ -303,7 +310,7 @@ public class GroupSendActivity extends Activity {
                             public void onClick(DialogInterface dialog, int which) {
                                 selectedContacts[itemid] = contactsNamesAndPhoneNo[which];
                                 selectedPhoneNo[itemid] = "";
-                                smsSelect[itemid] = -1;
+                                smsSelect[itemid] = 0;
                                 sms_ListView.setEnabled(false);
                                 selectedAdpter.selectedContacts[itemid] = contactsNames[which];
                                 selectedAdpter.notifyDataSetChanged();

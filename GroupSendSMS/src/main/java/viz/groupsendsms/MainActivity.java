@@ -172,7 +172,7 @@ public class MainActivity extends Activity {
             f.set(o, drawable);
 //            Toast.makeText(this, f.getType().getName(), 1000).show();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         sharedPreferences = context.getSharedPreferences("vsms", 0);
         if (sharedPreferences.getBoolean("showdesc", true)) {
@@ -182,7 +182,7 @@ public class MainActivity extends Activity {
                     public void onClick(DialogInterface dialog, int which) {
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putBoolean("showdesc", false);
-                        editor.commit();
+                        editor.apply();
                     }
                 }).setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
@@ -198,6 +198,7 @@ public class MainActivity extends Activity {
                 }).create().show();
             } catch (Exception e) {
                 Log.e("desc", e.getMessage());
+                e.printStackTrace();
             }
         }
     }
